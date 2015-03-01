@@ -12,10 +12,15 @@ Out of the box, the MySQL connectors only support visual studio and *namely*, Mi
 Here are some notable changes:
 
 1) localtime_r/s not supported by Mingw64 (as of now). Changed to regular localtime (Should be thread safe, not re-entrant safe though)
+
 2) __try __catch is not standard C. Implemented this functionality for Mingw64 with libseh: http://www.programmingunlimited.net/siteexec/content.cgi?page=libseh
+
 3) Removed any references to strtok_r/s. MySQL has a custom implementation within their source which will have to do
+
 4) Fixed syntax errors. Mainly syntax issues which prevent compiling with GCC ( will squeak by with MS compiler :p )
+
 5) Re-implemented timespec() - skip Mingw64 declaration with #define
+
 6) Fixed i64, LL, ULL references...
 
 Usage:
