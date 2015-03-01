@@ -15,9 +15,3 @@
 *.PDF	 diff=astextplain
 *.rtf	 diff=astextplain
 *.RTF	 diff=astextplain
-
-CMakeCache.txt -diff
-CMakeFiles -diff
-Makefile -diff
-cmake_install.cmake -diff
-install_manifest.txt -diff
