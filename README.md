@@ -56,9 +56,7 @@ If you get errors while generating, change '_found_header' to the MySQL C connec
 3) Set CMake var '_found_header' to path to MySQL C Connector /include
 4) CMake var 'MYSQL_LIB' to path to 'libmysqlclient.a'
 5) Configure/generate and build with mingw32-make or (make)
----------------------------
-
-+++++++++++++++++++++++++++++++++
+-------------------------------------------
 
 -----------------------------
 C Connector
