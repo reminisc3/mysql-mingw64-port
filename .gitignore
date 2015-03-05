@@ -49,6 +49,7 @@ local.properties
 build/
 [Bb]in/
 [Oo]bj/
+build32/
 
 # MSTest test Results
 [Tt]est[Rr]esult*/
