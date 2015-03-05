@@ -31,8 +31,9 @@ Here are some notable source changes:
 
 Building:
 
+---------------------
 C++ Connector
---------------
+--------------------
 You can use the pre-built binaries with your project. Remember to link with: ws2_32, secur32, mysqlclient
 
 To build Cppconn with CMake:
@@ -52,10 +53,15 @@ If you get errors while generating, change '_found_header' to the MySQL C connec
 --------------------------------------------
 
 1 ) Add to linked libs: -lmysqlclient -lwsock32 -lws2_32 -lsecur32
+
 2) Add search path for mysqlclient lib, eg: -L{PATH_TO}MYSQLCLIENT.A
+
 3) Set CMake var '_found_header' to path to MySQL C Connector /include
+
 4) CMake var 'MYSQL_LIB' to path to 'libmysqlclient.a'
+
 5) Configure/generate and build with mingw32-make or (make)
+
 -------------------------------------------
 
 -----------------------------
@@ -76,7 +82,11 @@ C Connector
 *note* I could not link the 32 bit DLLs. There is quite a bit of name mangling when trying to link and I decided to just support static libs
 
 1) Include search path for libseh header/libs, eg: -I{PATH_TO_LIBSEH} -L{PATH_TO_LIBSEH}
+
 2) Link C compiler with -lseh32
+
 3) Add  -lws2_32 -lsecur32 to CXX flags
+
 4) Set CMake var 'DISABLED_SHARED' to true
+
 5) Generate/configure and build with mingw32-make or make
