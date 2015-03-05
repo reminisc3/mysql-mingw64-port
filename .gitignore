@@ -49,7 +49,6 @@ local.properties
 build/
 [Bb]in/
 [Oo]bj/
-build32/
 
 # MSTest test Results
 [Tt]est[Rr]esult*/
@@ -222,3 +221,5 @@ CMakeFiles
 Makefile
 cmake_install.cmake
 install_manifest.txt
+build/
+build32/
